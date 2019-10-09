@@ -1,3 +1,4 @@
+
 sudo: false
 language: node_js
 node_js:
@@ -11,7 +12,7 @@ script:
 deploy:
   provider: pages
   skip-cleanup: true
-  github-token: 5e9267b6ea6a05b7f42d9279881ef9680c307564
+  github-token: $GH_TOKEN
   keep-history: true
   on:
     branch: master
